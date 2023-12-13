@@ -28,17 +28,24 @@ function outputHttpResponse(statusCode, statusMessage, headers, body) {
     }
     responseString += `\n${body}`;
     console.log(responseString);
+<<<<<<< HEAD
+=======
     // console.log("Response String:");
     // console.log(responseString);
     // console.log("Expected Response String:");
     // console.log("HTTP/1.1 403 Forbidden\nContent-Type: text/plain\n\nAccess Forbidden\n");
+>>>>>>> 4b131f959749253850e8d114386247346df5533d
 }
 
 function processHttpRequest(method, uri, headers, body) {
     // We define the value of the header Host
     const hostHeader = headers['Host'];
     let filePath;
+<<<<<<< HEAD
+    if (pathEscapesHomeDirectory(uri)) {
+=======
     if (/(\.\.(\/|\\|$))|([/\\]\.\.(\/|\\|$))/.test(uri)) {
+>>>>>>> 4b131f959749253850e8d114386247346df5533d
         outputHttpResponse(403, 'Forbidden', { 'Content-Type': 'text/plain' }, 'Access Forbidden');
         return;
     }
@@ -66,6 +73,19 @@ function processHttpRequest(method, uri, headers, body) {
     });
 }
 
+<<<<<<< HEAD
+function pathEscapesHomeDirectory(uri) {
+    const pathParts = uri.split('/');
+    for (const pathPart of pathParts) {
+        if (pathPart === '..') {
+            return true;
+        }
+    }
+    return false;
+}
+
+=======
+>>>>>>> 4b131f959749253850e8d114386247346df5533d
 function parseTcpStringAsHttpRequest(string) {
     const lines = string.split('\n');
     // the method is indicated by capital letters before the first space
