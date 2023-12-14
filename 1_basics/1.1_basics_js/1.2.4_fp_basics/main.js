@@ -3,8 +3,8 @@
  * Imports functions 'cityInformation' and 'parseCSV' from 'cityInformation.js'.
  */
 import { cityInformation, parseCSV } from './cityInformation.js';
-let inputText = "Біла Церква, Вінниця, Одеса";
-let csvText = `44.38,34.33,Алушта,31440,
+const inputText = "Біла Церква, Вінниця, Одеса";
+const csvText = `44.38,34.33,Алушта,31440,
 49.46,30.17,Біла Церква,200131,
 49.54,28.49,Бердичів,87575,#некомент
 

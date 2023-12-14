@@ -9,14 +9,14 @@ export class Validator {
      * @returns {boolean} - True if the email is valid, false otherwise.
      */
     validateEmail(email) {
-        const emailRegex = /^[a-zA-Z0-9][a-zA-Z0-9-.+]{0,18}[a-zA-Z0-9]@[a-zA-Z0-9-.!$%&’*+/=?^_-]{1,15}(\.[a-zA-Z]{1,5})$/;
+        const emailRegex = /^[a-zA-Z0-9][a-zA-Z0-9-.+]{0,19}@[a-zA-Z0-9.!$%&’*+/=?^_-]{1,15}\.[a-zA-Z]{1,5}$/;
         return emailRegex.test(email);
     }
     /**
-   * Validates a phone number.
-   * @param {string} phoneNumber - The phone number to be validated.
-   * @returns {boolean} - True if the phone number is valid, false otherwise.
-   */
+    * Validates a phone number.
+    * @param {string} phoneNumber - The phone number to be validated.
+    * @returns {boolean} - True if the phone number is valid, false otherwise.
+    */
     validatePhoneNumber(phoneNumber) {
         const phoneRegex = /^([-\s]*\+[-\s]*3[-\s]*8[-\s]*|[-\s]*)?(\(?(\d[-\s]*){3}\)?)([-\s]*\d[-\s]*){7}$/;
         const maxLength = 25;

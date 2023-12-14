@@ -1,9 +1,208 @@
-#myDiv {
+/* Task 1.4.1 */
+#blackSquare {
     width: 100px;
     height: 100px;
     background-color: black;
+    margin: 10px;
 }
 
 .hidden {
     display: none;
+}
+
+.button-container {
+    margin: 10px;
+}
+
+/* Task 1.4.2 */
+#toggleUsingCssAndJs {
+    margin-top: 10px;
+}
+
+/* Task 1.4.3 */
+.blackSquare {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: inline-block;
+    margin: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Task 1.4.4 */
+.selector-input {
+    margin-top: 10px;
+}
+
+/* Task 1.4.5 */
+.yellowSquare {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+/* Task 1.4.6 */
+#redSquare {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin-top: 10px;
+    margin: 10px;
+    display: none;
+}
+
+/* Task 1.4.7 */
+#focusInput {
+    margin-top: 10px;
+    display: block;
+    width: 430px;
+}
+
+.greenRectangle {
+    width: 50px;
+    height: 20px;
+    background-color: MediumSeaGreen;
+    margin-top: 10px;
+    margin: 10px;
+    display: none;
+}
+
+/* Task 1.4.8 */
+#imageInput {
+    width: 500px;
+}
+
+.image-input {
+    display: flex;
+    align-items: center;
+}
+
+.image-input button {
+    margin-left: 20px;
+}
+
+/* Task 1.4.9 */
+#imagesInput {
+    width: 500px;
+}
+
+.images-input {
+    margin-bottom: 20px;
+}
+
+.images-input button {
+    margin-left: 20px;
+}
+
+/* Task 1.4.10, 1.4.11, 1.4.12 */
+.info-block {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.coordinates-block,
+.language-block,
+.location-block {
+    margin-top: 10px;
+}
+
+/* Task 1.4.13 */
+.editable-block {
+    margin-bottom: 20px;
+}
+
+/* Task 1.4.14 */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Task 1.4.15 */
+#outerBlock {
+    width: 300px;
+    height: 200px;
+    background-color: Orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#innerBlock {
+    width: 100px;
+    height: 100px;
+    background-color: DodgerBlue;
+}
+
+/* Task 1.4.16 */
+#grayScreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 999;
+}
+
+/* Task 1.4.17 */
+#goForm {
+    margin-top: 10px;
+    margin: 10px;
+}
+
+/* Task 1.4.18 */
+.file-input-container {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hidden-input {
+    display: none;
+}
+
+.file-label {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.label-text {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    line-height: 100px;
+}
+
+.file-input-container.drag-over {
+    border-color: #4CAF50;
 }
