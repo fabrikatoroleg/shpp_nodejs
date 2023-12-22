@@ -121,21 +121,13 @@ ${res}
 =======================
 `);
 res = res.replace(/Date:[^\n]+\n/, "").replace(/[\n\r]+$/, "");
-<<<<<<< HEAD
-=======
-console.log(res.length);
-console.log(answers[process.argv[2]].length);
->>>>>>> 4b131f959749253850e8d114386247346df5533d
+
 
 if (res === answers[process.argv[2]])
     console.log("OK");
 
 else
-<<<<<<< HEAD
     console.log("mismatch, was waiting for response like: \n" + answers[process.argv[2]]);
 
 // console.log("res.length " + res.length);
 // console.log("answers[process.argv[2]].length " + answers[process.argv[2]].length);
-=======
-    console.log("mismatch, was waiting for response like: \n" + answers[process.argv[2]]);
->>>>>>> 4b131f959749253850e8d114386247346df5533d
