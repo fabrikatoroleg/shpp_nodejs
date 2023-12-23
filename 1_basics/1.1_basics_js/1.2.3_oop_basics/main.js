@@ -13,7 +13,6 @@ const electronicsProduct = new Electronics("2", "Smartphone", "High-end smartpho
 const findNameClothesProduct = clothesProduct.getMyProperty("name");
 const setClothesProductName = clothesProduct.setMyProperty("name", "Super T-shirt");
 const setElectronicsProductName = electronicsProduct.setMyProperty("name", "Super Smartphone");
-// console.log(findNameClothesProduct);
 const reviewClothes = {
     ID: 'of3',
     author: 'Author 3',
@@ -81,7 +80,7 @@ let productsClothes = [
 // checking the operation of the method searchProducts
 const searchText = "фут";
 const searchResults = searchAbstractProducts(productsClothes, searchText);
-// console.log(searchResults);
+console.log(searchResults);
 
 /* checking the operation of the method sortProducts
  everything is correct here, but it should be noted that yaya sorts the string,
