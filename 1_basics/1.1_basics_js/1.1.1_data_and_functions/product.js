@@ -27,19 +27,20 @@ function Product(ID = "", name = "", description = "", price = 0.0, brand = "", 
         Array.isArray(images)
         || images.every(image => typeof image === 'string')
     )) { throw new Error("Incorrect product properties."); }
-    const product = {
-        ID: ID,
-        name: name,
-        description: description,
-        price: parseFloat(price),
-        brand: brand,
-        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
-        activeSize: activeSize,
-        quantity: parseInt(quantity),
-        date: new Date(date),
-        reviews: Array.isArray(reviews) ? reviews : [],
-        images: Array.isArray(images) ? images : []
-    };
+
+    // Product object properties
+    this.ID = ID;
+    this.name = name;
+    this.description = description;
+    this.price = parseFloat(price);
+    this.brand = brand;
+    this.sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
+    this.activeSize = activeSize;
+    this.quantity = parseInt(quantity);
+    this.date = new Date(date);
+    this.reviews = Array.isArray(reviews) ? reviews : [];
+    this.images = Array.isArray(images) ? images : [];
+
     // we implement getter and setter for each field of the object
     Product.prototype.getMyID = function () {
         return this.ID;

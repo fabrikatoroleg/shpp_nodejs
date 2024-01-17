@@ -93,7 +93,6 @@ assert.deepStrictEqual(foundImage, 'image2.jpg', 'Incorrect getImage result with
 const defaultImage = product1.getImage(); // Without a parameter
 assert.deepStrictEqual(defaultImage, 'image1.jpg', 'Incorrect getImage result without parameter');
 
-
 // Function to test the addSize and deleteSize method
 function testAddDeleteSize() {
     // delete by index from the beginning of the array, check that the size is reduced
